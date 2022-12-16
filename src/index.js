@@ -10,10 +10,10 @@ rl.question(`Please enter the ID of the modpack, this can be found on the modpac
     rl.question(`Where do you wish to install this modpack? `, async (installDir) => {
         const downloadUrl = await getURL(packId);
         execSync(`cd ${installDir}`);
-        execSync(`wget ${downloadUrl}`);
+        execSync(`wget "${downloadUrl}"`);
         const urlSplit = downloadUrl.split('/'),
         modpackFolder = urlSplit[urlSplit.length - 1].replace('.zip', '');
-        execSync(`unzip ${modpackFolder}`);
+        execSync(`unzip "${modpackFolder}"`);
         rl.close();
     });
 });
