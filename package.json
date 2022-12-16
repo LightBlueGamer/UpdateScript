@@ -1,0 +1,28 @@
+{
+  "name": "server-updater",
+  "version": "0.0.1",
+  "description": "A simple script to update a modded minecraft server.",
+  "main": "src/index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LightBlueGamer/Server-Updater.git"
+  },
+  "keywords": [
+    "MineCraft"
+  ],
+  "author": "Tim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LightBlueGamer/Server-Updater/issues"
+  },
+  "homepage": "https://github.com/LightBlueGamer/Server-Updater#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.15"
+  },
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "node-fetch": "^3.3.0"
+  }
+}
