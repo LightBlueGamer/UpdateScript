@@ -13,6 +13,7 @@ rl.question(`Please enter the ID of the modpack, this can be found on the modpac
         const urlSplit = downloadUrl.split('/'),
         modpackFolder = urlSplit[urlSplit.length - 1].replace('.zip', '');
         execSync(`cd ${installDir} && unzip -o "${modpackFolder}"`);
+        execSync(`cd ${installDir} && rm -drf "${modpackFolder}.zip"`);
         rl.close();
     });
 });
